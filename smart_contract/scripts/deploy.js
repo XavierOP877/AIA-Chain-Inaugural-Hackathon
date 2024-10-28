@@ -5,7 +5,7 @@ async function main() {
   console.log("Deploying contracts with the account:", deployer.address);
 
   const Transactions = await ethers.getContractFactory("Transactions");
-  const gasPrice = ethers.utils.parseUnits('15000', 'gwei'); // Set to 60 gwei or as required by network
+  const gasPrice = ethers.utils.parseUnits('15000', 'gwei'); 
 
   console.log("Deploying Transaction contract...");
   const transactions = await Transactions.deploy({
